@@ -1,0 +1,5 @@
+{"ts": "2026-11-25T07:32:19.502517Z", "words": 170000, "status": 200, "real_prompt_tokens": 170087, "error": null}
+{"ts": "2026-11-25T07:32:21.075771Z", "words": 174000, "status": 200, "real_prompt_tokens": 174087, "error": null}
+{"ts": "2026-11-25T07:32:21.527695Z", "words": 176000, "status": 400, "real_prompt_tokens": null, "error": "This request has about 264097 prompt tokens. The limit is 262144."}
+{"ts": "2026-11-25T07:32:21.995293Z", "words": 200000, "status": 400, "real_prompt_tokens": null, "error": "This request has about 300097 prompt tokens. The limit is 262144."}
+{"ts": "2026-11-25T07:32:24.012331Z", "test": "tokenlimit.4x170k", "out": [[200, 170087, null, "36804", null, 0.9], [429, null, "rate_limit_exceeded", "45961", "21", 0.4], [429, null, "rate_limit_exceeded", "49908", "21", 0.4], [429, null, "rate_limit_exceeded", "52829", "21", 0.3]]}
