@@ -1,0 +1,79 @@
+{
+  "id": "task_ed9fabd80be648539bd063568c6a9eb1",
+  "object": "task",
+  "status": "completed",
+  "title": "Submit pizza order form",
+  "goal": "Fill in the pizza order form: customer name 'Moss Tester', telephone '555-0100', size Medium, toppings bacon and onion, then submit it. Report the 'custname' and 'size' values from the JSON response page.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://httpbin.org/forms/post"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "custname",
+      "size"
+    ],
+    "properties": {
+      "size": {
+        "type": "string"
+      },
+      "custname": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-advanced",
+  "effort": "medium",
+  "metadata": {
+    "case": "form_submit",
+    "suite": "accuracy"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "size": "medium",
+      "custname": "Moss Tester"
+    },
+    "output_text": "{\"custname\":\"Moss Tester\",\"size\":\"medium\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.072621,
+      "total_usd": 0.072954,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 7,
+    "cost_usd": 0.072621,
+    "model_calls": 8,
+    "input_tokens": 96438,
+    "output_tokens": 903,
+    "browser_minutes": 0.78,
+    "browser_seconds": 47,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 78402
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:58:23.600104+00:00",
+  "started_at": "2026-11-25T06:58:23.611825+00:00",
+  "finished_at": "2026-11-25T06:59:11.337391+00:00",
+  "files_expire_at": "2026-12-02T06:59:11.337391+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

@@ -1,0 +1,55 @@
+{
+  "id": "task_f64f4bb1796241aa9fdf3c9056875974",
+  "object": "task",
+  "status": "failed",
+  "title": "Literary analysis of scraped quotes",
+  "goal": "Visit https://quotes.toscrape.com and read every page carefully in the browser, one page at a time. For every quote, write a 3-sentence literary analysis. Return all analyses.",
+  "environment": {
+    "type": "browser"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.01,
+    "max_runtime_seconds": 600
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": null,
+  "byok": false,
+  "result": null,
+  "verification": null,
+  "usage": {
+    "cost": {
+      "model_usd": 0.010309,
+      "total_usd": 0.010976,
+      "browser_usd": 0.0006666666666666666,
+      "traffic_usd": null
+    },
+    "steps": 11,
+    "cost_usd": 0.010309,
+    "model_calls": 12,
+    "input_tokens": 120285,
+    "output_tokens": 2439,
+    "browser_minutes": 1.1,
+    "browser_seconds": 66,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 103568
+  },
+  "error": {
+    "code": "budget_exceeded",
+    "message": "Spent $0.01"
+  },
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:04:33.288686+00:00",
+  "started_at": "2026-11-25T07:04:33.298932+00:00",
+  "finished_at": "2026-11-25T07:05:40.796283+00:00",
+  "files_expire_at": "2026-12-02T07:05:40.796283+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

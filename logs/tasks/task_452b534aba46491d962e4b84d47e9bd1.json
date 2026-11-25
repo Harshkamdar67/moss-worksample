@@ -1,0 +1,74 @@
+{
+  "id": "task_452b534aba46491d962e4b84d47e9bd1",
+  "object": "task",
+  "status": "completed",
+  "title": "Count Einstein Quotes",
+  "goal": "Find every quote by Albert Einstein across all pages of the site. Return how many there are.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://quotes.toscrape.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "einstein_quote_count"
+    ],
+    "properties": {
+      "einstein_quote_count": {
+        "type": "integer"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-balanced",
+  "effort": "medium",
+  "metadata": {
+    "case": "quotes_pagination",
+    "suite": "accuracy"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "einstein_quote_count": 10
+    },
+    "output_text": "{\"einstein_quote_count\":10}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.074369,
+      "total_usd": 0.074702,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 7,
+    "cost_usd": 0.074369,
+    "model_calls": 8,
+    "input_tokens": 95537,
+    "output_tokens": 1104,
+    "browser_minutes": 0.56,
+    "browser_seconds": 34,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 77702
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:57:31.228528+00:00",
+  "started_at": "2026-11-25T06:57:31.242084+00:00",
+  "finished_at": "2026-11-25T06:58:05.802814+00:00",
+  "files_expire_at": "2026-12-02T06:58:05.802814+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

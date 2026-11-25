@@ -1,0 +1,79 @@
+{
+  "id": "task_ea7de67f7f2c4085b588c5328b5c82f6",
+  "object": "task",
+  "status": "completed",
+  "title": "Browse Poetry Category Books",
+  "goal": "Go to the 'Poetry' category. How many books are in it, and what is the title of the most expensive one?",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://books.toscrape.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "count",
+      "title"
+    ],
+    "properties": {
+      "count": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "anthropic/claude-haiku-5.5",
+  "effort": "medium",
+  "metadata": {
+    "case": "model.anthropic/claude-haiku-5.5",
+    "suite": "tasks_ai"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "count": 19,
+      "title": "Slow States of Collapse: Poems"
+    },
+    "output_text": "{\"count\": 19, \"title\": \"Slow States of Collapse: Poems\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.005551,
+      "total_usd": 0.005884,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 3,
+    "cost_usd": 0.005551,
+    "model_calls": 4,
+    "input_tokens": 77451,
+    "output_tokens": 1849,
+    "browser_minutes": 0.26,
+    "browser_seconds": 16,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 51281
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:24:58.769390+00:00",
+  "started_at": "2026-11-25T07:24:58.787448+00:00",
+  "finished_at": "2026-11-25T07:25:15.060473+00:00",
+  "files_expire_at": "2026-12-02T07:25:15.060473+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

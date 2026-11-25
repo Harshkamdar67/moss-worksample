@@ -1,0 +1,52 @@
+{
+  "id": "task_114b4bd61da747bd86544f61eebee069",
+  "object": "task",
+  "status": "cancelled",
+  "title": "Browse Wikipedia Random Articles",
+  "goal": "Browse https://en.wikipedia.org/wiki/Special:Random 10 times and list every article title you saw.",
+  "environment": {
+    "type": "browser"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.2,
+    "max_runtime_seconds": 300
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": null,
+  "byok": false,
+  "result": null,
+  "verification": null,
+  "usage": {
+    "cost": {
+      "model_usd": 0.00602,
+      "total_usd": 0.006353,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 0,
+    "cost_usd": 0.00602,
+    "model_calls": 4,
+    "input_tokens": 10679,
+    "output_tokens": 556,
+    "browser_minutes": 0.31,
+    "browser_seconds": 19,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 0
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:57:24.078367+00:00",
+  "started_at": "2026-11-25T06:57:24.092636+00:00",
+  "finished_at": "2026-11-25T06:57:42.980514+00:00",
+  "files_expire_at": "2026-12-02T06:57:42.980514+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

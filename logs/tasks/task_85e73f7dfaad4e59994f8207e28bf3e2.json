@@ -1,0 +1,79 @@
+{
+  "id": "task_85e73f7dfaad4e59994f8207e28bf3e2",
+  "object": "task",
+  "status": "completed",
+  "title": "Browse Poetry Category Books",
+  "goal": "Go to the 'Poetry' category. How many books are in it, and what is the title of the most expensive one?",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://books.toscrape.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "count",
+      "title"
+    ],
+    "properties": {
+      "count": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "openai/gpt-6-luna",
+  "effort": "medium",
+  "metadata": {
+    "case": "model.openai/gpt-6-luna",
+    "suite": "tasks_ai"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "count": 19,
+      "title": "Slow States of Collapse: Poems"
+    },
+    "output_text": "{\"count\":19,\"title\":\"Slow States of Collapse: Poems\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.004665,
+      "total_usd": 0.004998,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 6,
+    "cost_usd": 0.004665,
+    "model_calls": 7,
+    "input_tokens": 92140,
+    "output_tokens": 1290,
+    "browser_minutes": 0.38,
+    "browser_seconds": 23,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 71341
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:24:52.488219+00:00",
+  "started_at": "2026-11-25T07:24:52.498472+00:00",
+  "finished_at": "2026-11-25T07:25:16.037975+00:00",
+  "files_expire_at": "2026-12-02T07:25:16.037975+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

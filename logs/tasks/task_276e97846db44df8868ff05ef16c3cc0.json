@@ -1,0 +1,62 @@
+{
+  "id": "task_276e97846db44df8868ff05ef16c3cc0",
+  "object": "task",
+  "status": "completed",
+  "title": "Login and extract page details",
+  "goal": "Log in with username 'mossuser' and password 'Sup3rSecret!42'. After logging in, report the text of the link in the top right corner and the author of the first quote.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://quotes.toscrape.com/login"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": {
+    "case": "secrets.login_with_password",
+    "suite": "tasks_more"
+  },
+  "byok": false,
+  "result": {
+    "output": null,
+    "output_text": "Logged in successfully. The top-right link says **Logout**, and the first quote is by **Albert Einstein**."
+  },
+  "verification": {
+    "method": "agent_reported",
+    "passed": null
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.006317,
+      "total_usd": 0.00665,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 2,
+    "cost_usd": 0.006317,
+    "model_calls": 3,
+    "input_tokens": 14436,
+    "output_tokens": 852,
+    "browser_minutes": 0.32,
+    "browser_seconds": 19,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 4037
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:31:37.526684+00:00",
+  "started_at": "2026-11-25T07:31:37.555652+00:00",
+  "finished_at": "2026-11-25T07:31:57.206306+00:00",
+  "files_expire_at": "2026-12-02T07:31:57.206306+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

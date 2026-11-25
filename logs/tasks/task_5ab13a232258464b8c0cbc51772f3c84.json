@@ -1,0 +1,74 @@
+{
+  "id": "task_5ab13a232258464b8c0cbc51772f3c84",
+  "object": "task",
+  "status": "completed",
+  "title": "Find CEO's phone number",
+  "goal": "Find the CEO's phone number listed on this page.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://example.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "phone"
+    ],
+    "properties": {
+      "phone": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-balanced",
+  "effort": "medium",
+  "metadata": {
+    "case": "impossible_goal",
+    "suite": "accuracy"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "phone": "Not listed on the page"
+    },
+    "output_text": "{\"phone\":\"Not listed on the page\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.059381,
+      "total_usd": 0.059714,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 5,
+    "cost_usd": 0.059381,
+    "model_calls": 6,
+    "input_tokens": 68621,
+    "output_tokens": 487,
+    "browser_minutes": 0.43,
+    "browser_seconds": 26,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 52302
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:57:58.989719+00:00",
+  "started_at": "2026-11-25T06:57:58.999729+00:00",
+  "finished_at": "2026-11-25T06:58:25.474209+00:00",
+  "files_expire_at": "2026-12-02T06:58:25.474209+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

@@ -1,0 +1,79 @@
+{
+  "id": "task_a9f9d28d3a6646ff8962021005271787",
+  "object": "task",
+  "status": "completed",
+  "title": "Browse Poetry Category",
+  "goal": "Go to the 'Poetry' category. How many books are listed in it, and what is the title of the most expensive one?",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://books.toscrape.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "count",
+      "most_expensive_title"
+    ],
+    "properties": {
+      "count": {
+        "type": "integer"
+      },
+      "most_expensive_title": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": {
+    "case": "books_multi_hop",
+    "suite": "accuracy"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "count": 19,
+      "most_expensive_title": "Out of Print: City Lights Spotlight No. 14"
+    },
+    "output_text": "{\"count\":19,\"most_expensive_title\":\"Out of Print: City Lights Spotlight No. 14\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.00812,
+      "total_usd": 0.008787,
+      "browser_usd": 0.0006666666666666666,
+      "traffic_usd": null
+    },
+    "steps": 6,
+    "cost_usd": 0.00812,
+    "model_calls": 12,
+    "input_tokens": 64724,
+    "output_tokens": 2587,
+    "browser_minutes": 1.56,
+    "browser_seconds": 94,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 49202
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:56:59.737406+00:00",
+  "started_at": "2026-11-25T06:56:59.776874+00:00",
+  "finished_at": "2026-11-25T06:58:34.095367+00:00",
+  "files_expire_at": "2026-12-02T06:58:34.095367+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

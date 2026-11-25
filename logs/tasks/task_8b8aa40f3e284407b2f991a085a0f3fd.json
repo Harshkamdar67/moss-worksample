@@ -1,0 +1,58 @@
+{
+  "id": "task_8b8aa40f3e284407b2f991a085a0f3fd",
+  "object": "task",
+  "status": "completed",
+  "title": "Collect 60 Random Wikipedia Titles",
+  "goal": "Starting at https://en.wikipedia.org/wiki/Special:Random, use the browser UI only (no scripts, no APIs): click 'Random article' in the sidebar 60 times, one at a time, and after each click write down the article title. Return all 60 titles.",
+  "environment": {
+    "type": "browser"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.5,
+    "max_runtime_seconds": 60
+  },
+  "model": "moss-balanced",
+  "effort": "medium",
+  "metadata": null,
+  "byok": false,
+  "result": {
+    "output": null,
+    "output_text": "I completed only **1 of 60** Random article clicks before the run\u2019s time limit:\n\n1. [Alma Reville](https://en.wikipedia.org/wiki/Alma_Reville)\n\nA coordinate-scaling error initially opened \u201cContact us\u201d; correcting the coordinates produced the article above. The initial landing article is not counted.\n\n[Download the partial record](outputs/titles.md)"
+  },
+  "verification": {
+    "method": "agent_reported",
+    "passed": null
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.129994,
+      "total_usd": 0.130327,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 13,
+    "cost_usd": 0.129994,
+    "model_calls": 14,
+    "input_tokens": 238216,
+    "output_tokens": 1356,
+    "browser_minutes": 0.98,
+    "browser_seconds": 59,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 208044
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:03:09.147682+00:00",
+  "started_at": "2026-11-25T07:03:09.164185+00:00",
+  "finished_at": "2026-11-25T07:04:10.480140+00:00",
+  "files_expire_at": "2026-12-02T07:04:10.480140+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

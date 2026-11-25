@@ -1,0 +1,58 @@
+{
+  "id": "task_55718fbd6ea84310a31cfdc542deb3d7",
+  "object": "task",
+  "status": "completed",
+  "title": "Scrape all book titles and prices",
+  "goal": "Visit https://books.toscrape.com and, page by page through all 50 catalogue pages, collect the title and price of every single book (1000 books). Return them all.",
+  "environment": {
+    "type": "browser"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 1.0,
+    "max_runtime_seconds": 60
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": null,
+  "byok": false,
+  "result": {
+    "output": null,
+    "output_text": "Collected all 1,000 book titles and displayed prices across 50 catalogue pages, with 20 records per page. The CSV has the requested `title,price` columns and was verified to contain 1,001 lines including the header.\n\n[Download the complete CSV](outputs/books.csv)"
+  },
+  "verification": {
+    "method": "agent_reported",
+    "passed": null
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.010221,
+      "total_usd": 0.010554,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 7,
+    "cost_usd": 0.010221,
+    "model_calls": 8,
+    "input_tokens": 72663,
+    "output_tokens": 3654,
+    "browser_minutes": 0.74,
+    "browser_seconds": 44,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 57176
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:57:56.217508+00:00",
+  "started_at": "2026-11-25T06:57:56.227691+00:00",
+  "finished_at": "2026-11-25T06:58:41.320422+00:00",
+  "files_expire_at": "2026-12-02T06:58:41.320422+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

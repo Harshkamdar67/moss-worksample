@@ -1,0 +1,55 @@
+{
+  "id": "task_622abd0514964036bd0ee8c15290a46e",
+  "object": "task",
+  "status": "failed",
+  "title": "Scrape all book titles and prices",
+  "goal": "Visit https://books.toscrape.com and, page by page through all 50 catalogue pages, collect the title and price of every single book (1000 books). Return them all.",
+  "environment": {
+    "type": "browser"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.02,
+    "max_runtime_seconds": 900
+  },
+  "model": "moss-balanced",
+  "effort": "medium",
+  "metadata": null,
+  "byok": false,
+  "result": null,
+  "verification": null,
+  "usage": {
+    "cost": {
+      "model_usd": 0.023856,
+      "total_usd": 0.024189,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 1,
+    "cost_usd": 0.023856,
+    "model_calls": 2,
+    "input_tokens": 8132,
+    "output_tokens": 91,
+    "browser_minutes": 0.11,
+    "browser_seconds": 7,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 0
+  },
+  "error": {
+    "code": "budget_exceeded",
+    "message": "Spent $0.02"
+  },
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T06:57:45.491599+00:00",
+  "started_at": "2026-11-25T06:57:45.502076+00:00",
+  "finished_at": "2026-11-25T06:57:52.690941+00:00",
+  "files_expire_at": "2026-12-02T06:57:52.690941+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

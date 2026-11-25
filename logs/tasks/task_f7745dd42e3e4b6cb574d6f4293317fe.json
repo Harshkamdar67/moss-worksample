@@ -1,0 +1,74 @@
+{
+  "id": "task_f7745dd42e3e4b6cb574d6f4293317fe",
+  "object": "task",
+  "status": "completed",
+  "title": "Report Book ISBN",
+  "goal": "Report the ISBN of this book as shown on this page.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "isbn"
+    ],
+    "properties": {
+      "isbn": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-balanced",
+  "effort": "medium",
+  "metadata": {
+    "case": "halluc.isbn_not_on_page",
+    "suite": "tasks_ai"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "isbn": "Not shown on the page"
+    },
+    "output_text": "{\"isbn\":\"Not shown on the page\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.06972,
+      "total_usd": 0.070053,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 4,
+    "cost_usd": 0.06972,
+    "model_calls": 5,
+    "input_tokens": 66098,
+    "output_tokens": 586,
+    "browser_minutes": 0.41,
+    "browser_seconds": 25,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 46494
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:23:39.089637+00:00",
+  "started_at": "2026-11-25T07:23:39.117281+00:00",
+  "finished_at": "2026-11-25T07:24:04.746775+00:00",
+  "files_expire_at": "2026-12-02T07:24:04.746775+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

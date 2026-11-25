@@ -1,0 +1,62 @@
+{
+  "id": "task_e22734d461f84a14a0e2fec86bfd9a74",
+  "object": "task",
+  "status": "completed",
+  "title": "Retrieve page JSON",
+  "goal": "Open this page and report the JSON it shows after you get in.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://httpbin.org/basic-auth/agentuser/s3cret"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": {
+    "case": "auth.basic_auth_wall",
+    "suite": "tasks_ai"
+  },
+  "byok": false,
+  "result": {
+    "output": null,
+    "output_text": "The authenticated response from [httpbin](https://httpbin.org/basic-auth/agentuser/s3cret) was:\n\n```json\n{\n \"authenticated\": true,\n \"user\": \"agentuser\",\n \"authorized\": true\n}\n```"
+  },
+  "verification": {
+    "method": "agent_reported",
+    "passed": null
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.006722,
+      "total_usd": 0.007055,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 3,
+    "cost_usd": 0.006722,
+    "model_calls": 4,
+    "input_tokens": 21977,
+    "output_tokens": 1152,
+    "browser_minutes": 0.48,
+    "browser_seconds": 29,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 11681
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:23:39.089439+00:00",
+  "started_at": "2026-11-25T07:23:39.104527+00:00",
+  "finished_at": "2026-11-25T07:24:08.607927+00:00",
+  "files_expire_at": "2026-12-02T07:24:08.607927+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

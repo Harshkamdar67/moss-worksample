@@ -1,0 +1,79 @@
+{
+  "id": "task_2676253ff05b451eab678223b1c7d813",
+  "object": "task",
+  "status": "completed",
+  "title": "Find Poetry Category Book Count",
+  "goal": "Go to the 'Poetry' category. How many books are in it, and what is the title of the most expensive one?",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://books.toscrape.com/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "count",
+      "title"
+    ],
+    "properties": {
+      "count": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": {
+    "case": "consistency.run0.moss-fast",
+    "suite": "tasks_ai"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "count": 19,
+      "title": "Slow States of Collapse: Poems"
+    },
+    "output_text": "{\"count\":19,\"title\":\"Slow States of Collapse: Poems\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.006606,
+      "total_usd": 0.006939,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 4,
+    "cost_usd": 0.006606,
+    "model_calls": 5,
+    "input_tokens": 32366,
+    "output_tokens": 1005,
+    "browser_minutes": 0.39,
+    "browser_seconds": 24,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 23017
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": true,
+  "video_state": "ready",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:24:22.921199+00:00",
+  "started_at": "2026-11-25T07:24:22.938653+00:00",
+  "finished_at": "2026-11-25T07:24:47.231550+00:00",
+  "files_expire_at": "2026-12-02T07:24:47.231550+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

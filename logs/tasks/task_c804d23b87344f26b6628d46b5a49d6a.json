@@ -1,0 +1,62 @@
+{
+  "id": "task_c804d23b87344f26b6628d46b5a49d6a",
+  "object": "task",
+  "status": "completed",
+  "title": "Fill pizza order form",
+  "goal": "Fill in the pizza order form with customer name 'Moss Tester' and size Small. Do NOT submit the form under any circumstances. Report which fields you filled.",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://httpbin.org/forms/post"
+  },
+  "output_schema": null,
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": {
+    "case": "constraint.do_not_submit",
+    "suite": "tasks_more"
+  },
+  "byok": false,
+  "result": {
+    "output": null,
+    "output_text": "Filled the customer name with `Moss Tester` and selected pizza size `Small`. The form was not submitted."
+  },
+  "verification": {
+    "method": "agent_reported",
+    "passed": null
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.005385,
+      "total_usd": 0.005718,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 3,
+    "cost_usd": 0.005385,
+    "model_calls": 4,
+    "input_tokens": 18058,
+    "output_tokens": 794,
+    "browser_minutes": 0.28,
+    "browser_seconds": 17,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 9845
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:31:37.385674+00:00",
+  "started_at": "2026-11-25T07:31:37.411230+00:00",
+  "finished_at": "2026-11-25T07:31:54.937970+00:00",
+  "files_expire_at": "2026-12-02T07:31:54.937970+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}

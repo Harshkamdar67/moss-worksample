@@ -1,0 +1,74 @@
+{
+  "id": "task_56871e45e2b542abbd8a74d59cdb0ed9",
+  "object": "task",
+  "status": "completed",
+  "title": "Identify first quote author",
+  "goal": "Quotes on this page appear after a delay. Who is the author of the first quote?",
+  "environment": {
+    "type": "browser",
+    "start_url": "https://quotes.toscrape.com/js-delayed/"
+  },
+  "output_schema": {
+    "type": "object",
+    "required": [
+      "author"
+    ],
+    "properties": {
+      "author": {
+        "type": "string"
+      }
+    }
+  },
+  "limits": {
+    "max_cost_usd": 0.25,
+    "max_runtime_seconds": 420
+  },
+  "model": "moss-fast",
+  "effort": "medium",
+  "metadata": {
+    "case": "js.delayed_render",
+    "suite": "tasks_more"
+  },
+  "byok": false,
+  "result": {
+    "output": {
+      "author": "Albert Einstein"
+    },
+    "output_text": "{\"author\":\"Albert Einstein\"}"
+  },
+  "verification": {
+    "method": "output_schema",
+    "passed": true
+  },
+  "usage": {
+    "cost": {
+      "model_usd": 0.005123,
+      "total_usd": 0.005456,
+      "browser_usd": 0.0003333333333333333,
+      "traffic_usd": null
+    },
+    "steps": 3,
+    "cost_usd": 0.005123,
+    "model_calls": 4,
+    "input_tokens": 20327,
+    "output_tokens": 632,
+    "browser_minutes": 0.46,
+    "browser_seconds": 28,
+    "browser_traffic_mb": null,
+    "cached_input_tokens": 9506
+  },
+  "error": null,
+  "trace_available": true,
+  "video_available": false,
+  "video_state": "pending",
+  "live_url": null,
+  "cancel_requested": false,
+  "created_at": "2026-11-25T07:31:38.230301+00:00",
+  "started_at": "2026-11-25T07:31:38.240999+00:00",
+  "finished_at": "2026-11-25T07:32:06.586915+00:00",
+  "files_expire_at": "2026-12-02T07:32:06.586915+00:00",
+  "zero_data_retention": false,
+  "content_expires_at": null,
+  "content_deleted_at": null,
+  "webhook": null
+}
