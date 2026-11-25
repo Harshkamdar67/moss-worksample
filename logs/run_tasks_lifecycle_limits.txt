@@ -1,0 +1,16 @@
+[OK ] life.get_unknown_id: 404 not_found_error: No task with this id in this project
+[OK ] life.get_malformed_id: 404 not_found_error: No task with this id in this project
+[OK ] life.cancel_unknown_id: 404 not_found_error: No task with this id in this project
+[?? ] life.list_tasks_route: 200 {'object': 'list', 'data': [{'id': 'task_d629d7225fa149cda03511be2ab9b261', 'object': 'task', 'status': 'running', 'title': 'Find Tipping the Velvet Price', 'go
+[OK ] life.idempotent_replay: 202/202 same_id=True replay_hdr=true
+[OK ] life.idempotency_key_reused: 422 idempotency_key_reused: This Idempotency-Key was sent with another body. Send a new key for a new task
+[?? ] life.idempotency_key_case: 202 same_id=False
+[OK ] life.files_before_finish: 409 task_not_finished: The task's files are served once it has finished
+[OK ] life.example_com_heading: completed out='Example Domain' cost={'model_usd': 0.004412, 'total_usd': 0.004745, 'browser_usd': 0.0003333333333333333, 'traffic_usd': None} steps=4 transitions=[(0.3, 'running'), (16.4, 'completed')]
+[OK ] life.files_list: 200 n=4 [{'path': 'screenshots/agent/ses_dee819f98ffewVeGrceHM9PaWn-1795589835403-000.png', 'bytes': 83263}, {'path': 'screenshots/runner/00001-step-2.png', 'bytes': 83263}, {'path': 'screenshots/runner/00002
+[OK ] life.file_download: 200 83263 bytes image/png
+[OK ] life.file_path_traversal: 404 '{"detail":"Not Found"}'
+[OK ] life.cancel_finished: 200 status=completed 
+[OK ] life.cancel_running: cancel->200 status=running cancel_requested=True; final=cancelled after 10.4s; cost={'model_usd': 0.00602, 'total_usd': 0.006353, 'browser_usd': 0.0003333333333333333, 'traffic_usd': None}
+[BAD] lim.budget_0.02: failed budget_exceeded: Spent $0.02 run_s=7.188865 cost={'model_usd': 0.023856, 'total_usd': 0.024189, 'browser_usd': 0.0003333333333333333, 'traffic_usd': None} steps=1 partial_result='None' OVERSPEND model_usd=0.023856 > cap 0.02
+[BAD] lim.runtime_60s: completed None: None run_s=45.092731 cost={'model_usd': 0.010221, 'total_usd': 0.010554, 'browser_usd': 0.0003333333333333333, 'traffic_usd': None} steps=7 partial_result='Collected all 1,000 book titles and displayed prices across 50 catalogue pages, '
