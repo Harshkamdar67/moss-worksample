@@ -1,0 +1,2 @@
+[BAD] queue.cap_20: accepted=24 first_429_at=None
+[OK ] queue.cancel_cleanup: statuses={'completed': 21, 'cancelled': 3} total_cost=0.1003

@@ -1,0 +1,2 @@
+{"ts": "2026-11-25T07:06:00.488284Z", "test": "queue.cap_20", "expect": "429 too_many_queued_tasks around #21", "outcome": "accepted=24 first_429_at=None", "ok": false}
+{"ts": "2026-11-25T07:06:29.186114Z", "test": "queue.cancel_cleanup", "expect": "all cancelled, ~$0", "outcome": "statuses={'completed': 21, 'cancelled': 3} total_cost=0.1003", "ok": true}
