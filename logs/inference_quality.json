@@ -1,0 +1,49 @@
+[
+  {
+    "model": "moss/fastlane-1",
+    "correct": 14,
+    "of": 15,
+    "out_tokens": 2141,
+    "mean_s": 0.96,
+    "misses": [
+      [
+        "How many prime numbers are there between",
+        15,
+        4.0,
+        200
+      ]
+    ]
+  },
+  {
+    "model": "openai/gpt-6-luna",
+    "correct": 15,
+    "of": 15,
+    "out_tokens": 1346,
+    "mean_s": 1.51,
+    "misses": []
+  },
+  {
+    "model": "anthropic/claude-haiku-5.5",
+    "correct": 15,
+    "of": 15,
+    "out_tokens": 823,
+    "mean_s": 0.82,
+    "misses": []
+  },
+  {
+    "model": "google/gemini-3.5-flash-lite",
+    "correct": 15,
+    "of": 15,
+    "out_tokens": 1725,
+    "mean_s": 1.09,
+    "misses": []
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "correct": 15,
+    "of": 15,
+    "out_tokens": 1718,
+    "mean_s": 1.35,
+    "misses": []
+  }
+]
