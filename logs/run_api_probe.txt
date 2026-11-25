@@ -1,0 +1,16 @@
+[?? ] cors.preflight_any_origin: 200 allow-origin=* allow-headers=authorization,content-type
+[BAD] headers.request_id_echo: 200 echoed=False headers={'content-type': 'application/json', 'x-moss-box': 'g2a0e48', 'x-moss-request-id': 'da7d705cfef54b85b493778389d1788b', 'x-moss-retrieve-ms': '0.0', 'x-ratelimit-limit-requests': '120', 'x-ratelimit-limit-tokens': '600000', 'x-ratelimit-remaining-requests': '9', 'x-ratelimit-remaining-tokens': '599902', 'x-ratelimit-reset-requests': '1s', 'x-r
+[?? ] headers.server_leak: server=uvicorn via=1.1 Caddy,1.1 Caddy, 1.1 google x-moss-box=g2a0e48
+[OK ] headers.ratelimit_remaining_moves: remaining over 4 calls=['8', '8', '8', '9'] limit=120 reset=1s
+[?? ] http.gzip: content-encoding=None http_version=HTTP/1.1
+[?? ] auth.lowercase_bearer: 200 {"id":"chatcmpl-364ecb8b0fc6411bb0ee4593e935c4d9","object":"chat.completion","created":1795591421,"model":"moss/fastlane
+[?? ] auth.extra_spaces: client error LocalProtocolError("Illegal header value b'Bearer   <project_id>:moss_***  '")
+[?? ] auth.x_api_key_header: 401 {"error":{"message":"Missing bearer token","type":"authentication_error","code":"authentication_error","request_id":"dfe
+[?? ] auth.key_with_newline: 401 {"error":{"message":"The project credentials were rejected","type":"authentication_error","code":"authentication_error",
+[?? ] auth.basic_scheme: 401 {"error":{"message":"Missing bearer token","type":"authentication_error","code":"authentication_error","request_id":"e24
+[OK ] auth.key_in_query_string: 401
+[?? ] auth.reject_timing_p50: {'valid_project_bad_key': 0.336, 'bad_project': 0.334}
+[?? ] stream.client_abort: read 20 chunks then closed; check logs for billed tokens of request wsample-abort
+[?? ] retrieval.on: 200 retrieve_ms=10.8 prompt_tokens=426 steps=None reply='Based on the stored documents, the topics covered include the Notion integration, admin activity auditing, and two-factor authentication security.\n\nHere are three specific facts:\n\n1. You can use the Notion integration to'
+[?? ] retrieval.off: 200 retrieve_ms=0.0 prompt_tokens=101 steps=None reply='I don\'t have access to any "stored documents," as I do not have the ability to browse the internet or access external databases, files, or previous conversations beyond the current chat context.\n\nHowever, if you are refe'
+[BAD] retrieval.moss_search_tool: 400 output_types=[] text="{'message': 'tools[0].indexes must be a list of one or more index names', 'type': 'invalid_request_error', 'code': 'invalid_request_error', 'request_id': 'ef4da48902414b87ab1f59bda4a592bd'}"
