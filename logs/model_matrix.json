@@ -1,0 +1,202 @@
+[
+  {
+    "model": "moss/fastlane-1",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 0.157,
+    "total_p50": 0.551,
+    "usage": {
+      "prompt_tokens": 99,
+      "completion_tokens": 70,
+      "total_tokens": 169,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "openai/gpt-6-luna",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 1.087,
+    "total_p50": 1.538,
+    "usage": {
+      "prompt_tokens": 34,
+      "completion_tokens": 83,
+      "total_tokens": 117,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 19
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "anthropic/claude-haiku-5.5",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 0.658,
+    "total_p50": 0.804,
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 60,
+      "total_tokens": 102,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "google/gemini-3.5-flash-lite",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 1.056,
+    "total_p50": 1.112,
+    "usage": {
+      "prompt_tokens": 32,
+      "completion_tokens": 69,
+      "total_tokens": 101,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 1.449,
+    "total_p50": 1.633,
+    "usage": {
+      "prompt_tokens": 38,
+      "completion_tokens": 152,
+      "total_tokens": 190,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 1.517,
+    "total_p50": 1.802,
+    "usage": {
+      "prompt_tokens": 55,
+      "completion_tokens": 88,
+      "total_tokens": 143,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 28
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "qwen/qwen3.8-flash",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 1.494,
+    "total_p50": 1.873,
+    "usage": {
+      "prompt_tokens": 82,
+      "completion_tokens": 118,
+      "total_tokens": 200,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 46
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "minimax/minimax-m3.1-flash",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 0.662,
+    "total_p50": 0.809,
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 141,
+      "total_tokens": 346,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 0.934,
+    "total_p50": 1.142,
+    "usage": {
+      "prompt_tokens": 120,
+      "completion_tokens": 167,
+      "total_tokens": 287,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "errors": []
+  },
+  {
+    "model": "z-ai/glm-5.3",
+    "ok": 3,
+    "n": 3,
+    "ttft_p50": 1.081,
+    "total_p50": 1.352,
+    "usage": {
+      "prompt_tokens": 38,
+      "completion_tokens": 79,
+      "total_tokens": 117,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 19
+      }
+    },
+    "errors": []
+  }
+]

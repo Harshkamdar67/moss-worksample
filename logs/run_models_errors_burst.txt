@@ -1,0 +1,116 @@
+[OK ] models.moss/fastlane-1: 200 0.55s ttft_p50=0.157 total_p50=0.551 errs=[] :: {"model": "moss/fastlane-1", "ok": 3, "n": 3, "ttft_p50": 0.157, "total_p50": 0.551, "usage": {"prompt_tokens": 99, "completion_tokens": 70, "total_tokens": 169
+[OK ] models.openai/gpt-6-luna: 200 1.54s ttft_p50=1.087 total_p50=1.538 errs=[] :: {"model": "openai/gpt-6-luna", "ok": 3, "n": 3, "ttft_p50": 1.087, "total_p50": 1.538, "usage": {"prompt_tokens": 34, "completion_tokens": 83, "total_tokens": 1
+[OK ] models.anthropic/claude-haiku-5.5: 200 0.80s ttft_p50=0.658 total_p50=0.804 errs=[] :: {"model": "anthropic/claude-haiku-5.5", "ok": 3, "n": 3, "ttft_p50": 0.658, "total_p50": 0.804, "usage": {"prompt_tokens": 42, "completion_tokens": 60, "total_t
+[OK ] models.google/gemini-3.5-flash-lite: 200 1.11s ttft_p50=1.056 total_p50=1.112 errs=[] :: {"model": "google/gemini-3.5-flash-lite", "ok": 3, "n": 3, "ttft_p50": 1.056, "total_p50": 1.112, "usage": {"prompt_tokens": 32, "completion_tokens": 69, "total
+[OK ] models.z-ai/glm-5.3-flash: 200 1.63s ttft_p50=1.449 total_p50=1.633 errs=[] :: {"model": "z-ai/glm-5.3-flash", "ok": 3, "n": 3, "ttft_p50": 1.449, "total_p50": 1.633, "usage": {"prompt_tokens": 38, "completion_tokens": 152, "total_tokens":
+[OK ] models.deepseek/deepseek-v4.1-flash: 200 1.80s ttft_p50=1.517 total_p50=1.802 errs=[] :: {"model": "deepseek/deepseek-v4.1-flash", "ok": 3, "n": 3, "ttft_p50": 1.517, "total_p50": 1.802, "usage": {"prompt_tokens": 55, "completion_tokens": 88, "total
+[OK ] models.qwen/qwen3.8-flash: 200 1.87s ttft_p50=1.494 total_p50=1.873 errs=[] :: {"model": "qwen/qwen3.8-flash", "ok": 3, "n": 3, "ttft_p50": 1.494, "total_p50": 1.873, "usage": {"prompt_tokens": 82, "completion_tokens": 118, "total_tokens":
+[OK ] models.minimax/minimax-m3.1-flash: 200 0.81s ttft_p50=0.662 total_p50=0.809 errs=[] :: {"model": "minimax/minimax-m3.1-flash", "ok": 3, "n": 3, "ttft_p50": 0.662, "total_p50": 0.809, "usage": {"prompt_tokens": 205, "completion_tokens": 141, "total
+[OK ] models.moonshotai/kimi-k3: 200 1.14s ttft_p50=0.934 total_p50=1.142 errs=[] :: {"model": "moonshotai/kimi-k3", "ok": 3, "n": 3, "ttft_p50": 0.934, "total_p50": 1.142, "usage": {"prompt_tokens": 120, "completion_tokens": 167, "total_tokens"
+[OK ] models.z-ai/glm-5.3: 200 1.35s ttft_p50=1.081 total_p50=1.352 errs=[] :: {"model": "z-ai/glm-5.3", "ok": 3, "n": 3, "ttft_p50": 1.081, "total_p50": 1.352, "usage": {"prompt_tokens": 38, "completion_tokens": 79, "total_tokens": 117, "
+[OK ] err.no_auth: 401 0.22s code=authentication_error :: {"error": {"message": "Missing bearer token", "type": "authentication_error", "code": "authentication_error", "request_id": "095676fa2e394357a944298941e3a7f0"}}
+[OK ] err.bad_key: 401 0.83s code=authentication_error :: {"error": {"message": "The project credentials were rejected", "type": "authentication_error", "code": "authentication_error", "request_id": "82c6cdde840d4b8f9b
+[OK ] err.key_only_no_project: 401 0.04s code=authentication_error :: {"error": {"message": "Send Bearer project_id:project_key", "type": "authentication_error", "code": "authentication_error", "request_id": "157cd2fd3054473598a66
+[OK ] err.swapped_id_key: 401 0.39s code=authentication_error :: {"error": {"message": "The project credentials were rejected", "type": "authentication_error", "code": "authentication_error", "request_id": "920292bfeb5247b696
+[OK ] err.unknown_model: 400 0.03s code=model_not_found :: {"error": {"message": "Unknown model moss/does-not-exist. Send model moss/fastlane-1, or a vendor model name with your own key in X-Moss-Provider-Key.", "type":
+[OK ] err.vendor_native_no_byok: 400 0.03s code=missing_provider_key :: {"error": {"message": "Model gpt-6-luna runs on your own openai key. Send the key in the X-Moss-Provider-Key header, or send model moss/fastlane-1.", "type": "i
+[OK ] err.bad_byok_key: 401 0.59s code=upstream_error :: {"error": {"message": "The model rejected the prompt: HTTP 401: Incorrect API key provided: sk-inval***test. You can find your API key at https://platform.opena
+[OK ] err.responses_unknown_field: 400 0.03s code=unsupported_parameter :: {"error": {"message": "bogus_field is not supported", "type": "invalid_request_error", "code": "unsupported_parameter", "request_id": "a54ad1366acf443f896f3d1a5
+[OK ] err.responses_previous_id: 400 0.03s code=unsupported_parameter :: {"error": {"message": "previous_response_id is not supported. Send the whole conversation in input.", "type": "invalid_request_error", "code": "unsupported_para
+[BAD] err.unsupported_seed: 200 0.14s code=None :: {"id": "chatcmpl-d65d77364cba4e4ea1c3eefad33bf626", "object": "chat.completion", "created": 1795589587, "model": "moss/fastlane-1", "choices": [{"index": 0, "me
+[OK ] err.openai_stop: 400 0.02s code=unsupported_parameter :: {"error": {"message": "stop is not supported for model openai/gpt-6-luna. Remove it from the request.", "type": "invalid_request_error", "code": "unsupported_pa
+[OK ] err.anthropic_temperature: 400 0.02s code=unsupported_parameter :: {"error": {"message": "temperature is not supported for model anthropic/claude-haiku-5.5. Remove it from the request.", "type": "invalid_request_error", "code":
+[OK ] err.empty_messages: 400 0.03s code=invalid_request_error :: {"error": {"message": "messages is required", "type": "invalid_request_error", "code": "invalid_request_error", "request_id": "7ba196a0a0c6456e96c36fc8b85aab6f"
+[OK ] err.missing_messages: 400 0.03s code=invalid_request_error :: {"error": {"message": "messages is required", "type": "invalid_request_error", "code": "invalid_request_error", "request_id": "a85fbe6829874c2e93f5fc2ee1db4802"
+[OK ] err.bad_role: 400 0.03s code=invalid_request_error :: {"error": {"message": "messages[0].role must be one of system, developer, user, assistant, tool, function", "type": "invalid_request_error", "code": "invalid_re
+[OK ] err.temperature_out_of_range: 400 0.04s code=invalid_request_error :: {"error": {"message": "temperature must be in [0, 2], got 9.0. (parameter=temperature, value=9.0)", "type": "invalid_request_error", "code": "invalid_request_er
+[OK ] err.negative_max_tokens: 400 0.04s code=invalid_request_error :: {"error": {"message": "max_tokens must be at least 1, got -5. (parameter=max_tokens, value=-5)", "type": "invalid_request_error", "code": "invalid_request_error
+[OK ] err.max_tokens_1: 200 0.07s code=None finish=length usage={'prompt_tokens': 92, 'completion_tokens': 1, 'total_tokens': 93, 'prompt_tokens_details': {'cached_tokens': 0, 'cache_write_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 0}} :: {"id": "chatcmpl-28fbb8fdd8bb49fbb2d3f957bea97d83", "object": "chat.completion", "created": 1795589587, "model": "moss/fastlane-1", "choices": [{"index": 0, "me
+[OK ] err.malformed_json: 400 0.03s code=invalid_request_error :: {"error": {"message": "Request body must be JSON", "type": "invalid_request_error", "code": "invalid_request_error", "request_id": "e5cae2f8e60546a987428aeb972f
+[OK ] err.unknown_index: 403 0.88s code=permission_error :: {"error": {"message": "X-Moss-Indexes names an index outside this project", "type": "permission_error", "code": "permission_error", "request_id": "26403d5897d14
+[BAD] err.33_indexes: 403 0.35s code=permission_error :: {"error": {"message": "X-Moss-Indexes names an index outside this project", "type": "permission_error", "code": "permission_error", "request_id": "c96fb0b0e6954
+[BAD] err.wrong_method_get_chat: 404 0.02s code=None :: {"_text": ""}
+[OK ] err.unknown_route: 404 0.02s code=None :: {"_text": ""}
+[OK ] err.prompt_injection_in_model: 400 0.03s code=model_not_found :: {"error": {"message": "Unknown model ../../etc/passwd. Send model moss/fastlane-1, or a vendor model name with your own key in X-Moss-Provider-Key.", "type": "i
+[BAD] err.model_wrong_type: 200 0.14s code=None :: {"id": "chatcmpl-1f022f878c6a46e296be319c662ab3de", "object": "chat.completion", "created": 1795589589, "model": "moss/fastlane-1", "choices": [{"index": 0, "me
+[OK ] err.content_null: 400 0.03s code=invalid_request_error :: {"error": {"message": "19 validation errors: {'type': 'string_type', 'loc': 'body.messages.1.ChatCompletionDeveloperMessageParam.content', 'msg': 'Input should 
+[OK ] err.unicode_heavy: 200 0.18s code=None :: {"id": "chatcmpl-43b2d4162a4047a096d4b2d02e7af3d3", "object": "chat.completion", "created": 1795589589, "model": "moss/fastlane-1", "choices": [{"index": 0, "me
+Traceback (most recent call last):
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+        self.READ_NUM_BYTES, timeout=timeout
+    )
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_backends\sync.py", line 126, in read
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Harsh kamdar\Desktop\projects\Jobs\moss-worksample\scripts\inference_tests.py", line 357, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Harsh kamdar\Desktop\projects\Jobs\moss-worksample\scripts\inference_tests.py", line 348, in main
+    if "errors" in which: errors(c)
+                          ~~~~~~^^^
+  File "C:\Users\Harsh kamdar\Desktop\projects\Jobs\moss-worksample\scripts\inference_tests.py", line 312, in errors
+    s, dt, js, h = call(c, "POST", "/chat/completions", {"model": "moss/fastlane-1", "messages": [{"role": "user", "content": big}]})
+                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Harsh kamdar\Desktop\projects\Jobs\moss-worksample\scripts\common.py", line 58, in call
+    r = client.request(method, BASE + path, headers=headers(extra_headers, auth),
+                       json=body if raw_body is None else None,
+                       content=raw_body, timeout=120)
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Harsh kamdar\miniconda3\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadError: [WinError 10054] An existing connection was forcibly closed by the remote host

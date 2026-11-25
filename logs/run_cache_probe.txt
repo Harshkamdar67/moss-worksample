@@ -1,0 +1,12 @@
+random prompt, temperature=1.0             hit=True  same_text=True  a_ct=7 b_ct=1 a=0.203s b=0.029s
+different temperature (0 vs 1.5)           hit=False same_text=False a_ct=23 b_ct=19 a=0.268s b=0.278s
+different max_tokens (200 vs 5)            hit=False same_text=False a_ct=18 b_ct=5 a=0.173s b=0.112s
+different system prompt                    hit=False same_text=False a_ct=213 b_ct=539 a=1.845s b=4.619s
+different model (fastlane vs luna)         hit=False same_text=True  a_ct=3 b_ct=40 a=0.086s b=0.919s
+trailing whitespace difference             hit=False same_text=False a_ct=121 b_ct=189 a=0.782s b=1.253s
+case difference                            hit=False same_text=False a_ct=2 b_ct=116 a=0.084s b=1.041s
+same request, n=1 vs n=2                   hit=False same_text=False a_ct=54 b_ct=None a=0.454s b=0.029s
+user field differs (tenant isolation?)     hit=True  same_text=True  a_ct=53 b_ct=60 a=0.507s b=0.027s
+response_format differs                    hit=False same_text=False a_ct=12 b_ct=6 a=0.353s b=0.108s
+tools present vs absent                    hit=False same_text=False a_ct=128 b_ct=27 a=0.972s b=0.233s
+same request after 65s (TTL?)              hit=True
